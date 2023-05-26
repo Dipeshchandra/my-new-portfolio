@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c066516be2.js" crossorigin="anonymous"></script>
+</head>
+<body onload="bodyload()">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/plogo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>UI/UX</span> Designer</p>
+                <h1>Hi, i'm <span id="name">Dipesh</span><br> Chandra From India</h1>
+            </div>
+        </div>
+    </div>
+                                   <!----------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div>
+                        <img src="images/myphoto.jpg" alt="">
+                    </div>
+                   
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><b>I am Dipesh</b> an inspiring REACT and UI Desingner who is trying to seek a role to enhance and explore my technical knowledge in your company.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openskill('skills')">SKILLS</p>
+                        <p class="tab-links active-link" onclick="openexp('experience')">EXPERIENCE</p>
+                        <p class="tab-links active-link" onclick="openedu('education')">EDUCATION</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>Web Developement</span><br>Web app developemnt</li>
+                            <li><span>App Developement</span><br>Builiding Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>UI Fresher</span><br>UI developer Training at NARESH IT</li>  
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2022-23</span><br>UI developer Training at NARESH IT</li>
+                            <li><span>2022</span><br>BSC From ABVV Bilaspur (CG)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+                                       <!-----------Services------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est porro nemo numquam eligendi sunt consectetur a corporis ratione, mollitia modi at exercitationem? Laborum blanditiis, accusantium ducimus quam laboriosam explicabo sed voluptate officia sunt odit. At.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est porro nemo numquam eligendi sunt consectetur a corporis ratione, mollitia modi at exercitationem? Laborum blanditiis, accusantium ducimus quam laboriosam explicabo sed voluptate officia sunt odit. At.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est porro nemo numquam eligendi sunt consectetur a corporis ratione, mollitia modi at exercitationem? Laborum blanditiis, accusantium ducimus quam laboriosam explicabo sed voluptate officia sunt odit. At.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+                                           <!--------------portfolioi------------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                           <h3>Library App</h3>
+                           <p>The library app finds you the best books ever</p>
+                           <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="">
+                        <div class="layer">
+                            <h3>College Website</h3>
+                            <p>The Ultimate design of Fox University Website</p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="">
+                        <div class="layer">
+                            <h3>Music Web</h3>
+                            <p>You can hear the best mp3 music quality</p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn">See more</a>
+            </div>
+        </div>
+                                                <!--------------Contact--------------->
+        <div id="contact">
+            <div class="container">
+               <div class="row">
+                  <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>Dipeshchandra9@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91-8839640995</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/dipeshchandraa/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/dipesh-kumar-chandra-59939b257/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/Dipesh Chandra/"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="mycv.pdf" download class="btn btn2" id="btcv">Download CV</a>
+                  </div>
+                  <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required class="msg" id="name">
+                        <input type="email" name="Email" placeholder="Your Email" required class="msg" id="email">
+                        <textarea name="Message" rows="6" placeholder="Your Message" class="msg" id="msg"></textarea>
+                        <button type="submit" class="btn btn2 " id="btsb" onclick="submitclick()">Submit</button>
+                        <p id="error"></p>
+                    </form>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright (c) Dipesh. Made with <i class="fa fa-heart"></i> by dipesh chandra</p>
+            </div>
+        </div>
+    </div>
+                                    
+
+    <script>
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-content");
+        
+        function openskill(tabname){
+            document.getElementById("experience").style.display="none";
+            document.getElementById("skills").style.display="block";
+            document.getElementById("education").style.display="none";
+        }
+        function openexp(){
+            document.getElementById("skills").style.display="none";
+            document.getElementById("experience").style.display="block";
+            document.getElementById("education").style.display="none";
+        }
+        function openedu(){
+            document.getElementById("skills").style.display="none";
+            document.getElementById("experience").style.display="none";
+            document.getElementById("education").style.display="block";
+        }function firstimage(){
+            document.getElementById("img1").src="images/user2.jpg";
+            
+        }
+        function bodyload(){
+            
+        }
+        function submitclick(){
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var msg=document.getElementById("msg").value;
+
+            if(name=="" || email==""){
+                document.getElementById("error").innerHTML="Please fill blanks";
+            }
+            else{
+                document.getElementById("error").innerHTML=`Submitted..<br>Thank You...`;
+                name.value=="";
+                email.value=="";
+                bodyload();
+            }
+        }
+        
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+          sidemenu.style.right="0";
+        }
+        function closemenu(){
+          sidemenu.style.right="-200px";
+        }
+      </script>
+    <script>
+        const scriptURL =  'https://script.google.com/macros/s/AKfycbwYxbmP7pKpxXr8T0RaXNSryCmsKP7-NvExi5tqGrD6e1TtH6m3GJYZe85VtCkFItMYKA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg .innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+      </script>
+</body>
+</html>
